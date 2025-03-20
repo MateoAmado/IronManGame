@@ -1,0 +1,680 @@
+body{
+    margin: 0;
+    max-height: 100%;
+    overflow-x: hidden;
+}
+.background{
+    height: 80%;
+    background: url(img/Enviroment/Background/1.png);
+    background-size: 1280px 100%;
+    position: absolute;
+    animation: sky 120s linear infinite;
+    /*revisar*/
+    width: 100%;
+}
+@keyframes sky {
+    0% {
+        background-position: 1280px
+    }
+
+    100% {
+        background-position: 0
+    }
+}
+
+.gemsCollected{
+    position: absolute;
+    z-index: 1;
+    left: 45%;
+    width: 300px;
+    height: 230px;
+    background: url(img/Enviroment/InfiniteStones/GemsCollectedEmpty.png);
+}
+
+.gemsCollected_1{
+    position: absolute;
+    z-index: 1;
+    left: 45%;
+    width: 300px;
+    height: 230px;
+    background: url(img/Enviroment/InfiniteStones/GemsCollectedBlueStone.png);
+}
+.gemsCollected_2{
+    position: absolute;
+    z-index: 1;
+    left: 45%;
+    width: 300px;
+    height: 230px;
+    background: url(img/Enviroment/InfiniteStones/GemsCollectedRedStone.png);
+}
+.gemsCollected_3{
+    position: absolute;
+    z-index: 1;
+    left: 45%;
+    width: 300px;
+    height: 230px;
+    background: url(img/Enviroment/InfiniteStones/GemsCollectedPinkStone.png);
+}
+.gemsCollected_4{
+    position: absolute;
+    z-index: 1;
+    left: 45%;
+    width: 300px;
+    height: 230px;
+    background: url(img/Enviroment/InfiniteStones/GemsCollectedPurpleStone.png);
+}
+.gemsCollected_5{
+    position: absolute;
+    z-index: 1;
+    left: 45%;
+    width: 300px;
+    height: 230px;
+    background: url(img/Enviroment/InfiniteStones/GemsCollectedGreenStone.png);
+}
+.gemsCollected_6{
+    position: absolute;
+    z-index: 1;
+    left: 45%;
+    width: 300px;
+    height: 230px;
+    background: url(img/Enviroment/InfiniteStones/GemsCollectedYellowStone.png);
+}
+
+
+.city1{
+    height: 100%;
+    background: url(img/Enviroment/Background/2.png);
+    background-size: 1280px 100%;
+    position: absolute;
+    animation: cityAnim 18s linear infinite;
+    /*revisar*/
+    width: 100%;
+}
+@keyframes cityAnim {
+    0% {
+        background-position: 1280px
+    }
+
+    100% {
+        background-position: 0
+    }
+}
+
+.city2{
+    height: 100%;
+    background: url(img/Enviroment/Background/3.png);
+    background-size: 1280px 100%;
+    position: absolute;
+    animation: cityAnim 16s linear infinite;
+    /*revisar*/
+    width: 100%;
+}
+
+.city3{
+    height: 100%;
+    background: url(img/Enviroment/Background/4.png);
+    background-size: 1280px 100%;
+    position: absolute;
+    animation: cityAnim 14s linear infinite;
+    width: 100%;
+}
+.city4{
+    height: 100%;
+    background: url(img/Enviroment/Background/5.png);
+    background-size: 1280px 100%;
+    position: absolute;
+    animation: cityAnim 9s linear infinite;
+    width: 100%;
+}
+
+.road{
+    height: 100%;
+    background: url(img/Enviroment/RoadPNG.png);
+    background-size: 1280px 100%;
+    position: absolute;
+    background-repeat: repeat-x;
+    animation: road 4s linear infinite;
+    width: 100%;
+}
+@keyframes road{
+    0%{
+        background-position: 1280px;
+    }
+    100%{
+        background-position: 0;
+    }
+    
+}
+.roadFloor{
+    height: 100%;
+    background: url(img/Enviroment/RoadFloor.png);
+    background-size: 1280px 100%;
+    position: absolute;
+    width: 100%;
+}
+.player{
+    z-index: 1;
+    position: absolute;
+    bottom: 6%;
+    left: 100px;
+}
+.run{
+    width: 90px;
+    HEIGHT: 200PX;
+    background: url(img/IronManWalkTest.png) repeat-x;
+    animation: run .7s steps(6) infinite;
+}
+@keyframes run {
+    0% {
+        background-position: 0px
+    }
+
+    100% {
+        background-position: -600px
+    }
+}
+.jump_container{
+    width: 73px;
+    height: 100px;
+    bottom: 15%;
+    left: 100px;
+    position: absolute;
+    animation: jump 600ms linear infinite;
+}
+@keyframes jump {
+    0% {
+        bottom: 15%;
+    }
+    50%{
+        bottom: 51%;
+    }
+    100% {
+        bottom: 15%;
+    }
+}
+.jump {
+    width: 84px;
+    height: 200px;
+    background: url(img/IronManJump.png) repeat-x;
+    position: absolute;
+    animation: jumpStep 600ms steps(11) forwards;
+}
+
+@keyframes jumpStep {
+    0% {
+        background-position: 0px;
+       
+    }
+    100% {
+        background-position: -924px;
+        
+    }
+}
+
+/*Infinite stones:*/
+.blue_gem{
+    width: 25px;
+    height: 33px;
+    z-index: 1;
+    position: absolute;
+    background:url(img/Enviroment/InfiniteStones/BlueStone.png);
+    animation: gem 500ms steps(6) infinite;
+}
+.red_gem{
+    width: 25px;
+    height: 33px;
+    left: 30px;
+    z-index: 1;
+    position: absolute;
+    background:url(img/Enviroment/InfiniteStones/RedStone.png);
+    animation: gem 500ms steps(6) infinite;
+}
+.pink_gem{
+    width: 25px;
+    height: 33px;
+    left: 60px;
+    z-index: 1;
+    position: absolute;
+    background:url(img/Enviroment/InfiniteStones/PinkStone.png);
+    animation: gem 500ms steps(6) infinite;
+}
+.purple_gem{
+    width: 25px;
+    height: 33px;
+    z-index: 1;
+    left: 90px;
+    position: absolute;
+    background:url(img/Enviroment/InfiniteStones/PurpleStone.png);
+    animation: gem 500ms steps(6) infinite;
+}
+.green_gem{
+    width: 25px;
+    height: 33px;
+    left: 120px;
+    z-index: 1;
+    position: absolute;
+    background:url(img/Enviroment/InfiniteStones/GreenStone.png);
+    animation: gem 500ms steps(6) infinite;
+}
+.yellow_gem{
+    width: 25px;
+    height: 33px;
+    z-index: 1;
+    left: 150px;
+    position: absolute;
+    background:url(img/Enviroment/InfiniteStones/YellowStone.png);
+    animation: gem 500ms steps(6) infinite;
+}
+@keyframes gem{
+    0%{
+       background-position: 0px;
+    }
+    100%{
+        background-position: -150px;
+    }
+}
+.infinite_stones{
+    width: 25px;
+    height: 33px;
+    bottom: 80%;
+    
+    z-index: 1;
+    position: absolute;
+    animation: gemMoving 4s linear forwards;
+}
+
+@keyframes gemMoving{
+    from{
+        left: 100%;
+    }
+    to{
+         left: -5%;
+    }
+    
+}
+/*End of Infinite stones:*/
+
+.lives_3{
+    position: absolute;
+    z-index: 1;
+    background: url(img/3Lifes.png);
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100px;
+    background-size: 100%;
+}
+.lives_2{
+    position: absolute;
+    z-index: 1;
+    background: url(img/2Lifes.png);
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100px;
+    background-size: 100%;
+}
+.lives_1{
+    position: absolute;
+    z-index: 1;
+    background: url(img/1Life.png);
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100px;
+    background-size: 100%;
+}
+.lives_0{
+    position: absolute;
+    z-index: 1;
+    background: url(img/0Lifes.png);
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100px;
+    background-size: 100%;
+}
+/*Enemy feet*/
+.enemyFeet_container {
+    position: absolute;
+    width: 80px;
+    height: 137px;
+    z-index: 1;
+    display: flex;
+    left: 0;
+    bottom: 9%;
+   /* animation: moveEnemy 3s linear infinite;*/
+    align-items: center;
+    justify-content: center;
+    animation-name: moveEnemy;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+@keyframes moveEnemy{
+    from {
+      left: 93%;
+    }
+    to {
+      left: -15%;
+    }
+}
+
+.enemy_feet{
+    width: 124px;
+    height: 200px;
+    z-index: 1;
+ 
+    position: absolute;
+    background: url(img/EnemyWalk.png);
+    image-rendering: pixelated;
+    animation: enemywalk 600ms steps(4) infinite;
+}
+@keyframes enemywalk{
+    0%{
+        background-position: 0px;
+    }
+    100%{
+        background-position: -496px;
+    }
+}
+/*End Enemy feet*/
+
+/*Enemy air*/
+.enemy_air{
+    width: 202px;
+    height: 152px;
+    z-index: 1;
+    position: absolute;
+    background: url(img/EnemyFly.png);
+    image-rendering: pixelated;
+    animation: enemyFly 600ms steps(2) infinite;
+}
+@keyframes enemyFly{
+    0%{
+        background-position: 0px;
+    }
+    100%{
+        background-position: -404px;
+    }
+}
+.enemyAir_container{
+    position: absolute;
+    width: 202px; 
+    height: 152px; 
+    z-index: 1;
+    left: 0;
+    bottom: 50%;
+  /* animation: moveEnemy 4s linear infinite;¨*/
+    animation-name: moveEnemy;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+.player_fly_hitbox{
+    height: 88px;
+    width: 230px;
+    position: absolute;
+    z-index: 1;
+    bottom: 14.5%;
+    /*border: solid;*/
+}
+
+.player_fly_container{
+    position: absolute;
+    bottom: 6%;
+    width: 250px;
+    height: 200px;
+    z-index: 1;
+}
+.player_fly{
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    bottom: 6%;
+    z-index: 1;
+    background-image: url(img/IronManFly.png);
+    animation: ironFly 300ms steps(2) infinite;
+}
+@keyframes ironFly{
+    0%{
+        background-position: 0px;
+    }
+    100%{
+        background-position: -500px;
+    }
+
+}
+
+.hit{
+    z-index: 1;
+    width: 122px;
+    height: 200px;
+    position: absolute;
+    bottom: 6%;
+    left: 100px;
+}
+.hit_image{
+    width: 122px;
+    height: 200px;
+    background: url(img/IronManHit.png);
+    animation: hited 300ms forwards;
+}
+@keyframes hited{
+    0% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.game_over{
+    z-index: 1;
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    bottom: 6%;
+    left: 100px;
+    background-image: url(img/IronManGAMEOVER.png);
+    animation: gameOver 2s steps(3) forwards;
+}
+@keyframes gameOver{
+    0%{
+        background-position: 0px;
+    }
+    100%{
+        background-position: -900px;
+    }
+}
+
+.game_over_screen{
+    z-index: 1;
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    bottom: 6%;
+    left: 100px;
+    background-image: url(img/IronManGAMEOVER.png);
+    background-position: -600px;
+}
+
+.game_over_replay{
+    z-index: 1;
+    position: absolute;
+    background-image: url(img/GameOverScreen.png);
+    width: 100%;
+    height: 100%;
+}
+
+.restart_button{
+    z-index: 1;
+    bottom: 20%;
+    left: 43%;
+    position: absolute;
+    cursor: pointer;
+    width: 282px;
+    height: 88px;
+    background-image: url(img/resetButton.png);
+}
+
+
+.paused{
+    animation-play-state: paused;
+}
+
+.timer {
+    width: 100px;
+    height: 100px;
+    font-size: 48px;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    right: 30px;
+    background: url(img/Enviroment/timer.png);
+    z-index: 1;
+}
+
+#seconds {
+    top: 20px;
+    left: 14px;
+    width: 3ch;
+    position: absolute;
+    /* color: black; */
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'Press Start 2P';
+    src: url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+}
+
+.battery{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    z-index: 1;
+    background: url(img/Enviroment/Chargues.png);
+    animation: moveBattery 4s linear forwards;
+}
+
+@keyframes moveBattery{
+    from {
+        left: 93%;
+      }
+      to {
+        left: -15%;
+      }
+}
+
+.pauseButton{
+    width: 155px;
+    height: 191px;
+    background: url(img/PauseButton.png);
+    position: absolute;
+    z-index: 1;
+    left: 62%;
+    top: 2%;
+}
+.playButton{
+    width: 155px;
+    height: 191px;
+    background: url(img/playButton.png);
+    position: absolute;
+    z-index: 1;
+    left: 62%;
+    top: 2%;
+}
+.soundButtonOn{
+    width: 155px;
+    height: 191px;
+    background: url(img/soundON.png);
+    position: absolute;
+    z-index: 1;
+    left: 37%;
+    top: -4%;
+}
+.soundButtonoff{
+    width: 155px;
+    height: 191px;
+    background: url(img/soundOff.png);
+    position: absolute;
+    z-index: 1;
+    left: 37%;
+    top: -4%;
+}
+
+.you_win{
+    width: 100%;
+    top: -17%;
+    height: 110%;
+    position: absolute;
+    z-index: 1;
+    background: url(img/youWintest.png);
+}
+
+.menu{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    background: url(img/Menu.png);
+}
+.playMenuButton{
+    width: 352px;
+    height: 145px;
+    position: absolute;
+    z-index: 1;
+    background: url(img/PlayMenu.png);
+    left: 40%;
+    cursor: pointer;
+    top: 40%;
+}
+.optionsMenuButton{
+    width: 352px;
+    height: 145px;
+    position: absolute;
+    z-index: 1;
+    background: url(img/OptionsMenu.png);
+    left: 40%;
+    cursor: pointer;
+    top: 53%;
+}
+
+.instructions{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    background: url(img/Instrucciones.png);
+}
+
+.goBack{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 1;
+    left: 8%;
+    background: url(img/goBack.png);
+    cursor: pointer;
+}
+.soundMenuButtonOn{
+    width: 155px;
+    height: 191px;
+    background: url(img/soundON.png);
+    position: absolute;
+    z-index: 1;
+    bottom: 0%;
+    right: 1%;
+}
+.soundMenuButtonoff{
+    width: 155px;
+    height: 191px;
+    background: url(img/soundOff.png);
+    position: absolute;
+    z-index: 1;
+    bottom: 0%;
+    right: 1%;
+}
